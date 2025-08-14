@@ -15,12 +15,12 @@ ST-KGLP/
 ├── finetune.py          # Model fine-tuning with LoRA
 ├── inference.py         # Model inference and prediction
 ├── eval.py             # Evaluation metrics computation
-├── combiner.py         # Knowledge graph embedding combiner
+├── combiner.py         # knowledge aligner and query-aware adaptive weighting
 ├── utils/              # Utility functions and tools
 │   ├── prompter.py     # Prompt template management
 │   ├── tools.py        # General utilities and KGE processing
 │   └── callbacks.py    # Training callbacks
-├── prompts/            # Prompt templates for different tasks
+├── prompts/            # Prompt templates
 ├── lora/               # LoRA weights storage
 ├── log/                # Logs and results
 └── data/               # Dataset storage
@@ -111,7 +111,7 @@ python main.py
 ### - Model Parameters
 - `--llm_path`: Path to pre-trained LLM
 - `--llm_hidden_size`: Hidden dimension of LLM
-- `--adapter_hidden_dim`: Hidden dimension of MLP adapter
+- `--adapter_hidden_dim`: Hidden dimension of knowledge aligner
 
 
 
