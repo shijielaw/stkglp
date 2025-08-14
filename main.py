@@ -169,7 +169,7 @@ if __name__ == '__main__':
 
     # =========parameters to be modified==================================
     args.data_name = "UMLS"  # UMLS, NELL, Wiki16K, FB15K-237
-    args.num_epochs = 1
+    args.num_epochs = 1  # just for test
     args.use_multi_gpu = True
     args.run_mode = "train"  # train or test
         
